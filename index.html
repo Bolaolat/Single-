@@ -1,39 +1,201 @@
 <html>
-<head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @keyframes colorChange {
-            0% { background-color: black; color: white; }
-            50% { background-color: white; color: black; }
-            100% { background-color: black; color: white; }
+ <head>
+  <title>
+   App Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .color-change {
-            animation: colorChange 2s infinite;
+        .container {
+            padding: 20px;
         }
-        .watermark {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            opacity: 0.5;
-            font-size: 12px;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
         }
-    </style>
-</head>
-<body class="flex items-center justify-center min-h-screen color-change">
-    <div class="text-center">
-        <p class="text-lg">SADCASM</p>
-        <p class="text-2xl mt-4">2020: <span class="font-bold">Single</span></p>
-        <p class="text-2xl mt-2">2021: <span class="font-bold">Single</span></p>
-        <p class="text-2xl mt-2">2022: <span class="font-bold">Single</span></p>
-        <p class="text-2xl mt-2">2023: <span class="font-bold">Single</span></p>
-        <p class="text-2xl mt-2">2024: <span class="font-bold">Single</span></p>
-        <p class="text-xl mt-4">The only things consistent in my life</p>
-        <div class="mt-4">
-            <span class="text-4xl">🤧</span>
-        </div>
+        .header i {
+            font-size: 24px;
+        }
+        .header .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .app-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .app-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+        }
+        .app-details {
+            margin-left: 20px;
+        }
+        .app-details h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .app-details p {
+            font-size: 16px;
+            color: #9e9e9e;
+            margin: 5px 0 0 0;
+        }
+        .buttons {
+            display: flex;
+            margin-top: 20px;
+        }
+        .buttons button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            margin: 0 5px;
+        }
+        .buttons .uninstall {
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+        .buttons .open {
+            background-color: #4a90e2;
+            color: #ffffff;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .section p {
+            font-size: 16px;
+            color: #9e9e9e;
+            margin: 5px 0 0 0;
+        }
+        .stars {
+            display: flex;
+            margin-top: 10px;
+        }
+        .stars i {
+            font-size: 24px;
+            color: #9e9e9e;
+            margin-right: 5px;
+        }
+        .write-review {
+            color: #4a90e2;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-top: 1px solid #2c2c2c;
+            margin-top: 30px;
+        }
+        .footer i {
+            font-size: 24px;
+            color: #9e9e9e;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <i class="fas fa-arrow-left">
+    </i>
+    <div class="title">
+     Google Play
     </div>
-    <div class="watermark">
-        by BLUEDEMON
+    <i class="fas fa-ellipsis-v">
+    </i>
+   </div>
+   <div class="app-info">
+    <img alt="App icon" height="80" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-eFeSmiPwBSVYyym4xlxQGDyR.png?st=2024-09-09T22%3A55%3A25Z&amp;se=2024-09-10T00%3A55%3A25Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-09T23%3A32%3A00Z&amp;ske=2024-09-10T23%3A32%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=TXHkR4SxdPYNE1FrLjFMvdDRR%2B4CsrdgJxxjoNM8ppY%3D" width="80"/>
+    <div class="app-details">
+     <h1>
+      Blackbox AI Code Chat
+     </h1>
+     <p>
+      BlackboxAI
+     </p>
     </div>
-</body>
+   </div>
+   <div class="buttons">
+    <button class="uninstall">
+     Uninstall
+    </button>
+    <button class="open">
+     Open
+    </button>
+   </div>
+   <div class="section">
+    <h2>
+     What's new
+     <i class="fas fa-circle" style="font-size: 8px; color: #4a90e2;">
+     </i>
+    </h2>
+    <p>
+     Last updated Apr 21, 2024
+    </p>
+    <p>
+     Use Directly after Install
+    </p>
+   </div>
+   <div class="section">
+    <h2>
+     Rate this app
+    </h2>
+    <p>
+     Tell others what you think
+    </p>
+    <div class="stars">
+     <i class="far fa-star">
+     </i>
+     <i class="far fa-star">
+     </i>
+     <i class="far fa-star">
+     </i>
+     <i class="far fa-star">
+     </i>
+     <i class="far fa-star">
+     </i>
+    </div>
+    <div class="write-review">
+     Write a review
+    </div>
+   </div>
+   <div class="section">
+    <h2>
+     App support
+    </h2>
+   </div>
+   <div class="section">
+    <h2>
+     About this app
+    </h2>
+    <p>
+     BLACKBOX.AI is a Coding LLM designed to transform the way we build software
+    </p>
+   </div>
+   <div class="footer">
+    <i class="fas fa-gamepad">
+    </i>
+    <i class="fas fa-th-large">
+    </i>
+    <i class="fas fa-search">
+    </i>
+   </div>
+  </div>
+ </body>
 </html>
